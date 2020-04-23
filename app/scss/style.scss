@@ -2,10 +2,12 @@
 @import "libs";
 @import "fonts";
 @import "global";
-@import "media";
+
 
 // start header 
-
+.header{
+    background-color: #fff;
+}
 .header__top-inner{
     display: flex;
 justify-content: space-between;
@@ -102,6 +104,7 @@ align-items: center;
     }
 }
 .basket{
+    margin-left: 20px;
     span{
         background-color: $green;
     }
@@ -115,8 +118,7 @@ align-items: center;
         display: block;
     }
 }
-.user{
-    margin-left: 20px;
+.user{   
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -174,6 +176,7 @@ align-items: center;
 .circle__menu{
     position: absolute;
     top: 69px;
+    z-index: 1;
 }
 .user__box,
 .basket__box,
@@ -303,7 +306,10 @@ color: $green;
 .icons-color::before{
 color: $tomato;
 }
-
+.header__btn-menu,
+.menu__btn{
+    display: none;
+}
 // end header 
 
 // start search 
@@ -1145,4 +1151,6 @@ color: $bg;
 
 
 // end product-page
+
+@import "media";
 
